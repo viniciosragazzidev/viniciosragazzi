@@ -1,0 +1,199 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --scroll-size: 10px;
+  --scroll-radius: 10px;
+  --scroll-track: #01090e;
+  --scroll-thumb-color: #a6b1b9;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: var(--scroll-size, 10px);
+  height: var(--scroll-size, 10px);
+}
+body::-webkit-scrollbar-track {
+  background-color: var(--scroll-track, transparent);
+  border-radius: var(--scroll-track-radius, var(--scroll-radius));
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb-color, grey);
+  background-image: var(--scroll-thumb, none);
+  border-radius: var(--scroll-thumb-radius, var(--scroll-radius));
+}
+
+.magicpattern {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: repeat;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 2000 1400%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cmask id=%22b%22 x=%220%22 y=%220%22 width=%222000%22 height=%221400%22%3E%3Cpath fill=%22url(%23a)%22 d=%22M0 0h2000v1400H0z%22%2F%3E%3C%2Fmask%3E%3Cpath fill=%22%23000609%22 d=%22M0 0h2000v1400H0z%22%2F%3E%3Cg style=%22transform-origin:center center%22 stroke=%22%230318257a%22 stroke-width=%222%22 mask=%22url(%23b)%22%3E%3Cpath fill=%22none%22 d=%22M0 0h91v91H0zM91 0h91v91H91zM182 0h91v91h-91zM273 0h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182540%22 d=%22M364 0h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182514%22 d=%22M455 0h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182504%22 d=%22M546 0h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M637 0h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%230318251d%22 d=%22M728 0h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M819 0h91v91h-91zM910 0h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182500%22 d=%22M1001 0h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1092 0h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%230318253a%22 d=%22M1183 0h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1274 0h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182561%22 d=%22M1365 0h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182555%22 d=%22M1456 0h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1547 0h91v91h-91zM1638 0h91v91h-91zM1729 0h91v91h-91zM1820 0h91v91h-91zM1911 0h91v91h-91zM0 91h91v91H0zM91 91h91v91H91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182574%22 d=%22M182 91h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M273 91h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%230318250c%22 d=%22M364 91h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M455 91h91v91h-91zM546 91h91v91h-91zM637 91h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182512%22 d=%22M728 91h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182552%22 d=%22M819 91h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M910 91h91v91h-91zM1001 91h91v91h-91zM1092 91h91v91h-91zM1183 91h91v91h-91zM1274 91h91v91h-91zM1365 91h91v91h-91zM1456 91h91v91h-91zM1547 91h91v91h-91zM1638 91h91v91h-91zM1729 91h91v91h-91zM1820 91h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%230318251d%22 d=%22M1911 91h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%230318256d%22 d=%22M0 182h91v91H0z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%230318250c%22 d=%22M91 182h91v91H91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M182 182h91v91h-91zM273 182h91v91h-91zM364 182h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182545%22 d=%22M455 182h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M546 182h91v91h-91zM637 182h91v91h-91zM728 182h91v91h-91zM819 182h91v91h-91zM910 182h91v91h-91zM1001 182h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182553%22 d=%22M1092 182h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1183 182h91v91h-91zM1274 182h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%230318256f%22 d=%22M1365 182h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182554%22 d=%22M1456 182h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1547 182h91v91h-91zM1638 182h91v91h-91zM1729 182h91v91h-91zM1820 182h91v91h-91zM1911 182h91v91h-91zM0 273h91v91H0zM91 273h91v91H91zM182 273h91v91h-91zM273 273h91v91h-91zM364 273h91v91h-91zM455 273h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182523%22 d=%22M546 273h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M637 273h91v91h-91zM728 273h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182562%22 d=%22M819 273h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M910 273h91v91h-91zM1001 273h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182540%22 d=%22M1092 273h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1183 273h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%230318253e%22 d=%22M1274 273h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1365 273h91v91h-91zM1456 273h91v91h-91zM1547 273h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%230318253f%22 d=%22M1638 273h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1729 273h91v91h-91zM1820 273h91v91h-91zM1911 273h91v91h-91zM0 364h91v91H0zM91 364h91v91H91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%230318256c%22 d=%22M182 364h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%230318255a%22 d=%22M273 364h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%230318255e%22 d=%22M364 364h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M455 364h91v91h-91zM546 364h91v91h-91zM637 364h91v91h-91zM728 364h91v91h-91zM819 364h91v91h-91zM910 364h91v91h-91zM1001 364h91v91h-91zM1092 364h91v91h-91zM1183 364h91v91h-91zM1274 364h91v91h-91zM1365 364h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182522%22 d=%22M1456 364h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1547 364h91v91h-91zM1638 364h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%230318251a%22 d=%22M1729 364h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1820 364h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182557%22 d=%22M1911 364h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M0 455h91v91H0zM91 455h91v91H91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%230318255f%22 d=%22M182 455h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182569%22 d=%22M273 455h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M364 455h91v91h-91zM455 455h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182537%22 d=%22M546 455h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M637 455h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182572%22 d=%22M728 455h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M819 455h91v91h-91zM910 455h91v91h-91zM1001 455h91v91h-91zM1092 455h91v91h-91zM1183 455h91v91h-91zM1274 455h91v91h-91zM1365 455h91v91h-91zM1456 455h91v91h-91zM1547 455h91v91h-91zM1638 455h91v91h-91zM1729 455h91v91h-91zM1820 455h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%230318257a%22 d=%22M1911 455h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M0 546h91v91H0zM91 546h91v91H91zM182 546h91v91h-91zM273 546h91v91h-91zM364 546h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182539%22 d=%22M455 546h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M546 546h91v91h-91zM637 546h91v91h-91zM728 546h91v91h-91zM819 546h91v91h-91zM910 546h91v91h-91zM1001 546h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182510%22 d=%22M1092 546h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1183 546h91v91h-91zM1274 546h91v91h-91zM1365 546h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182518%22 d=%22M1456 546h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1547 546h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182526%22 d=%22M1638 546h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1729 546h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%230318254b%22 d=%22M1820 546h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1911 546h91v91h-91zM0 637h91v91H0zM91 637h91v91H91zM182 637h91v91h-91zM273 637h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182537%22 d=%22M364 637h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182519%22 d=%22M455 637h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182563%22 d=%22M546 637h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M637 637h91v91h-91zM728 637h91v91h-91zM819 637h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182524%22 d=%22M910 637h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1001 637h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%230318255e%22 d=%22M1092 637h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1183 637h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182553%22 d=%22M1274 637h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1365 637h91v91h-91zM1456 637h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182525%22 d=%22M1547 637h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182521%22 d=%22M1638 637h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1729 637h91v91h-91zM1820 637h91v91h-91zM1911 637h91v91h-91zM0 728h91v91H0z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182573%22 d=%22M91 728h91v91H91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M182 728h91v91h-91zM273 728h91v91h-91zM364 728h91v91h-91zM455 728h91v91h-91zM546 728h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182579%22 d=%22M637 728h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M728 728h91v91h-91zM819 728h91v91h-91zM910 728h91v91h-91zM1001 728h91v91h-91zM1092 728h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182542%22 d=%22M1183 728h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1274 728h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182508%22 d=%22M1365 728h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1456 728h91v91h-91zM1547 728h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%230318255d%22 d=%22M1638 728h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1729 728h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%230318254e%22 d=%22M1820 728h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1911 728h91v91h-91zM0 819h91v91H0z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182501%22 d=%22M91 819h91v91H91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182573%22 d=%22M182 819h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M273 819h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%230318254d%22 d=%22M364 819h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M455 819h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182531%22 d=%22M546 819h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M637 819h91v91h-91zM728 819h91v91h-91zM819 819h91v91h-91zM910 819h91v91h-91zM1001 819h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182527%22 d=%22M1092 819h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1183 819h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182514%22 d=%22M1274 819h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1365 819h91v91h-91zM1456 819h91v91h-91zM1547 819h91v91h-91zM1638 819h91v91h-91zM1729 819h91v91h-91zM1820 819h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182536%22 d=%22M1911 819h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M0 910h91v91H0z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182547%22 d=%22M91 910h91v91H91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%230318251e%22 d=%22M182 910h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M273 910h91v91h-91zM364 910h91v91h-91zM455 910h91v91h-91zM546 910h91v91h-91zM637 910h91v91h-91zM728 910h91v91h-91zM819 910h91v91h-91zM910 910h91v91h-91zM1001 910h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182502%22 d=%22M1092 910h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%230318254d%22 d=%22M1183 910h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1274 910h91v91h-91zM1365 910h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%230318253a%22 d=%22M1456 910h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1547 910h91v91h-91zM1638 910h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182541%22 d=%22M1729 910h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1820 910h91v91h-91zM1911 910h91v91h-91zM0 1001h91v91H0z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%230318256b%22 d=%22M91 1001h91v91H91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182522%22 d=%22M182 1001h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M273 1001h91v91h-91zM364 1001h91v91h-91zM455 1001h91v91h-91zM546 1001h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182547%22 d=%22M637 1001h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M728 1001h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182554%22 d=%22M819 1001h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M910 1001h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182525%22 d=%22M1001 1001h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1092 1001h91v91h-91zM1183 1001h91v91h-91zM1274 1001h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%230318255d%22 d=%22M1365 1001h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%230318253b%22 d=%22M1456 1001h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%230318250a%22 d=%22M1547 1001h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1638 1001h91v91h-91zM1729 1001h91v91h-91zM1820 1001h91v91h-91zM1911 1001h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%230318256e%22 d=%22M0 1092h91v91H0z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M91 1092h91v91H91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%230318256e%22 d=%22M182 1092h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M273 1092h91v91h-91zM364 1092h91v91h-91zM455 1092h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182571%22 d=%22M546 1092h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M637 1092h91v91h-91zM728 1092h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%230318252c%22 d=%22M819 1092h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182537%22 d=%22M910 1092h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%230318254c%22 d=%22M1001 1092h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1092 1092h91v91h-91zM1183 1092h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182572%22 d=%22M1274 1092h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1365 1092h91v91h-91zM1456 1092h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182502%22 d=%22M1547 1092h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1638 1092h91v91h-91zM1729 1092h91v91h-91zM1820 1092h91v91h-91zM1911 1092h91v91h-91zM0 1183h91v91H0zM91 1183h91v91H91zM182 1183h91v91h-91zM273 1183h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182534%22 d=%22M364 1183h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M455 1183h91v91h-91zM546 1183h91v91h-91zM637 1183h91v91h-91zM728 1183h91v91h-91zM819 1183h91v91h-91zM910 1183h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%230318254a%22 d=%22M1001 1183h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1092 1183h91v91h-91zM1183 1183h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182517%22 d=%22M1274 1183h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1365 1183h91v91h-91zM1456 1183h91v91h-91zM1547 1183h91v91h-91zM1638 1183h91v91h-91zM1729 1183h91v91h-91zM1820 1183h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182506%22 d=%22M1911 1183h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M0 1274h91v91H0zM91 1274h91v91H91zM182 1274h91v91h-91zM273 1274h91v91h-91zM364 1274h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182514%22 d=%22M455 1274h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M546 1274h91v91h-91zM637 1274h91v91h-91zM728 1274h91v91h-91zM819 1274h91v91h-91zM910 1274h91v91h-91zM1001 1274h91v91h-91zM1092 1274h91v91h-91zM1183 1274h91v91h-91zM1274 1274h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182528%22 d=%22M1365 1274h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%230318251f%22 d=%22M1456 1274h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%230318256f%22 d=%22M1547 1274h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1638 1274h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182577%22 d=%22M1729 1274h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1820 1274h91v91h-91zM1911 1274h91v91h-91zM0 1365h91v91H0z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%230318254e%22 d=%22M91 1365h91v91H91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182571%22 d=%22M182 1365h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%230318251e%22 d=%22M273 1365h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M364 1365h91v91h-91zM455 1365h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182578%22 d=%22M546 1365h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M637 1365h91v91h-91zM728 1365h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182563%22 d=%22M819 1365h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182560%22 d=%22M910 1365h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1001 1365h91v91h-91zM1092 1365h91v91h-91zM1183 1365h91v91h-91zM1274 1365h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%230318256e%22 d=%22M1365 1365h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1456 1365h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22%2303182512%22 d=%22M1547 1365h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1638 1365h91v91h-91zM1729 1365h91v91h-91zM1820 1365h91v91h-91zM1911 1365h91v91h-91z%22 transform=%22skewX(4)%22%2F%3E%3C%2Fg%3E%3Cdefs%3E%3CradialGradient id=%22a%22%3E%3Cstop offset=%2250%25%22 stop-color=%22%23fff%22 stop-opacity=%220%22%2F%3E%3Cstop offset=%221%22 stop-color=%22%23fff%22 stop-opacity=%22.5%22%2F%3E%3C%2FradialGradient%3E%3C%2Fdefs%3E%3C%2Fsvg%3E");
+}
+
+body {
+  background-attachment: fixed !important;
+}
+li a {
+  position: relative;
+}
+
+li a::after {
+  content: attr(data-name);
+  font-size: 14px;
+  position: absolute;
+  top: 0;
+  transform: translateY(-20%);
+
+  text-align: left;
+  width: 60px;
+  height: 20px;
+  transition: all 0.4s ease 0.2s;
+  opacity: 0 !important;
+}
+li a:hover::after {
+  opacity: 1 !important;
+  transform: translateX(50px);
+}
+
+header li a::after {
+}
+header li a:hover::after {
+  opacity: 1 !important;
+  transform: translateY(30px);
+}
+
+.sectionOne span.availabilityForWork,
+.sectionOne h1,
+.sectionOne .description p,
+.sectionOne .buttons span,
+.sectionOne .buttons .socials a, ul.menuTop li {
+  opacity: 0;
+  animation: show 2s ease forwards;
+}
+
+.sectionOne h1 {
+  animation-delay: 0.2s;
+}
+.sectionOne .description p {
+  animation-delay: 0.3s;
+}
+.sectionOne .buttons span {
+  animation-delay: 0.4s;
+}
+
+.sectionOne .buttons .socials a, .menuTop li {
+  animation: show 2s ease forwards, showProjects 0.5s ease forwards;
+}
+.sectionOne .buttons .socials a:first-child,.menuTop li:nth-child(1) {
+  animation-delay: 0.5s;
+}
+.sectionOne .buttons .socials a:nth-child(2),
+.menuTop li:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+.sectionOne .buttons .socials a:nth-child(3), .menuTop li:nth-child(3) {
+  animation-delay: 0.7s;
+}
+.projectsBox .cardProjects {
+  scale: 0;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.projectsBox .cardProjects.show,
+.menuTop li {
+  animation: showProjects 0.5s ease forwards;
+}
+.projectsBox .cardProjects.show:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.projectsBox .cardProjects.show:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.projectsBox .cardProjects.show:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.cardProjects {
+  transition: 0.8s ease all;
+
+}
+.cardProjects .contain {
+  transition: 0.8s ease all;
+}
+.cardProjects .img{
+  position: relative;
+}
+.cardProjects .img::after{
+  content: 'Clique aqui para saber mais sobre o projeto!';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #01090ede;
+  z-index: 100;
+  color: #d6dee4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 14px;
+  text-align: center;
+  opacity: 0;
+  transition: all .6s ease;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.cardProjects .img:hover::after{
+  opacity: 1;
+}
+.cardProjects:hover {
+  scale: 1.05;
+}
+.cardProjects:hover .contain {
+  scale: 1.05;
+}
+
+.modal{
+opacity: 0;
+  background-color: #01090e6c;
+  
+}
+.modal.showModal {
+  animation: show .8s ease forwards
+}
+.modal.showModal .modalOverlay{
+  opacity: 0;
+
+  animation: show .8s ease forwards, showProjects 0.5s ease forwards;
+
+
+}
+
+@keyframes showProjects {
+  0% {
+    scale: 0;
+  }
+  100% {
+    scale: 1;
+  }
+}
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
