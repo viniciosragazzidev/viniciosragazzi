@@ -49,9 +49,6 @@ export const SectionTwo = () => {
           {projects.slice(startIndex, endIndex).map((value, i) => (
             <div
               key={i}
-              onClick={() => {
-                addItemInURL(value.id);
-              }}
               className={`cardProjects w-full h-min  hover:scale-105  bg-primaryDark rounded-xl p-5 overflow-hidden ${
                 showProject ? "show" : ""
               }`}
@@ -79,7 +76,12 @@ export const SectionTwo = () => {
                   </div>
                 </div>
 
-                <div className="img h-full overflow-hidden rounded-md">
+                <div
+                  className="img h-full overflow-hidden rounded-md"
+                  onClick={() => {
+                    addItemInURL(value.id);
+                  }}
+                >
                   <Image
                     className="object-contain w-full"
                     src={value.img}
