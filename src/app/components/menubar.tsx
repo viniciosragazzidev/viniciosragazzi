@@ -34,7 +34,7 @@ export const MenuBar = () => {
       // Função a ser chamada quando o scroll parar
       setLastPosition(scrollPosition);
     }
-  }, [isScrolling]);
+  }, [isScrolling, scrollPosition]);
 
   return (
     <nav

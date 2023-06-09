@@ -36,7 +36,7 @@ const SlideModal: React.FC = () => {
     } else {
       removeIdFromURL();
     }
-  }, [openModal]);
+  }, [openModal,getDataProjects]);
   return (
     <div
  

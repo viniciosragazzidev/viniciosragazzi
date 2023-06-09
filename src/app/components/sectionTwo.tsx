@@ -1,6 +1,7 @@
-import { InstagramLogo, GithubLogo, LinkedinLogo } from "@phosphor-icons/react";
+
 import { useContext, useEffect, useState } from "react";
 import AppContext from "../context/AppContext";
+import Image from "next/image";
 
 export const SectionTwo = () => {
   const [totalPages, setTotalPages] = useState(1);
@@ -15,7 +16,7 @@ export const SectionTwo = () => {
       setTotalPages(totItens);
       console.log(totItens);
     }
-  }, []);
+  }, [projects.length]);
 
   const projectsPerPage = 4;
   const startIndex = (currentPage - 1) * projectsPerPage;
@@ -53,6 +54,7 @@ export const SectionTwo = () => {
         <div className="projectsBox grid grid-cols-2 max-md:grid-cols-1 justify-center items-center justify-items-center gap-5">
           {projects.slice(startIndex, endIndex).map((value, i) => (
             <div
+            key={i}
             onClick={()=>{addItemInURL(value.id)}}
               className={`cardProjects w-full h-min  hover:scale-105  bg-primaryDark rounded-xl p-5 overflow-hidden ${
                 showProject ? "show" : ""
@@ -82,7 +84,7 @@ export const SectionTwo = () => {
                 </div>
 
                 <div className="img h-full overflow-hidden rounded-md">
-                  <img
+                  <Image
                     className="object-contain w-full"
                     src={value.img}
                     alt={`imagem do projeto ${value.nome}`}
@@ -95,7 +97,7 @@ export const SectionTwo = () => {
         <div className="pagination absolute bottom-[-50px] right-0">
           <ul className="flex gap-2">
             {Array.from({ length: totalPages }, (valor, i) => (
-              <li>
+              <li key={i}>
                 <a
                   href="#projects"
                   className={`w-7 h-7 text-sm rounded-lg  text-white bg-primaryDark flex justify-center items-center hover:scale-95 cursor-pointer transition-all hover:bg-subtitle hover:text-primaryDark hover:font-bold ${
