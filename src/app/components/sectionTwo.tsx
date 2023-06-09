@@ -1,14 +1,12 @@
-
 import { useContext, useEffect, useState } from "react";
 import AppContext from "../context/AppContext";
 import Image from "next/image";
 
 export const SectionTwo = () => {
   const [totalPages, setTotalPages] = useState(1);
-  const {openModal,setOpenModal,projects} = useContext(AppContext)
+  const { openModal, setOpenModal, projects } = useContext(AppContext);
 
   const [currentPage, setCurrentPage] = useState(1);
-
 
   useEffect(() => {
     if (projects.length > 0) {
@@ -30,18 +28,14 @@ export const SectionTwo = () => {
       setShowProjects(true);
     }, 200);
   };
-  
 
   const addItemInURL = (item: number) => {
     const url = new URL(window.location.href);
-    url.searchParams.set('id', item.toString());
-    history.pushState({}, '', url.toString());
+    url.searchParams.set("id", item.toString());
+    history.pushState({}, "", url.toString());
     setOpenModal(true);
-}
+  };
 
-
-
-  
   return (
     <section
       id="projects"
@@ -54,8 +48,10 @@ export const SectionTwo = () => {
         <div className="projectsBox grid grid-cols-2 max-md:grid-cols-1 justify-center items-center justify-items-center gap-5">
           {projects.slice(startIndex, endIndex).map((value, i) => (
             <div
-            key={i}
-            onClick={()=>{addItemInURL(value.id)}}
+              key={i}
+              onClick={() => {
+                addItemInURL(value.id);
+              }}
               className={`cardProjects w-full h-min  hover:scale-105  bg-primaryDark rounded-xl p-5 overflow-hidden ${
                 showProject ? "show" : ""
               }`}
@@ -88,6 +84,8 @@ export const SectionTwo = () => {
                     className="object-contain w-full"
                     src={value.img}
                     alt={`imagem do projeto ${value.nome}`}
+                    width={500} // Adicione a largura intrínseca aqui
+                    height={500} // Adicione a altura intrínseca aqui
                   />
                 </div>
               </div>
