@@ -125,11 +125,12 @@ header li a:hover::after {
 }
 
 .cardProjects {
-  transition: 0.8s ease all;
+  transition: 0.4s ease all;
 
 }
 .cardProjects .contain {
-  transition: 0.8s ease all;
+  transition: 0.4s ease all;
+  animation-delay: .3s;
 }
 .cardProjects .img{
   position: relative;
