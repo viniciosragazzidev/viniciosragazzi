@@ -42,7 +42,7 @@ const SlideModal: React.FC = () => {
 
   return (
     <div
-      className={`modal w-full fixed  justify-center items-center   h-screen  top-0 p-6  ${
+      className={`modal w-full fixed  justify-center items-center   h-screen  top-0 p-6 max-sm:p-[5px]  ${
         openModal ? "showModal flex z-50" : "opacity-100 hidden"
       }`}
     >
@@ -68,14 +68,14 @@ const SlideModal: React.FC = () => {
                 </h1>
               </div>
               <div className="w-full grid grid-cols-2  max-sm:grid-cols-1  h-full py-4 overflow-auto">
-                <div className="galery  flex flex-col items-center p-4 gap-4">
-                  <div className="img-main w-full max-w-sm overflow-hidden rounded-lg">
+                <div className="galery  flex flex-col items-center p-4 gap-4 max-sm:px-0">
+                  <div className="img-main w-full max-w-sm overflow-hidden rounded-lg max-[480px]:h-14">
                     {dataModal?.img ? (
                       <Image
                         src={imgMain.length > 0 ? imgMain : dataModal.imgList[0].img}
                         width={500}
                         height={500}
-                        className="h-[218px]"
+                        className="h-full"
                         alt={`Imagem do projeto ${dataModal.nome}`}
                       />
                     ) : (
@@ -89,7 +89,7 @@ const SlideModal: React.FC = () => {
                         onClick={() => {
                           setImgMain(item.img);
                         }}
-                        className="img overflow-hidden rounded-md cursor-pointer hover:scale-95 transition-transform max-w-[140px] min-h-[10px]"
+                        className="img overflow-hidden rounded-md cursor-pointer hover:scale-95 transition-transform max-w-[140px] min-h-[10px] "
                       >
                         {dataModal?.img ? (
                           <Image

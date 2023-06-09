@@ -14,6 +14,7 @@ module.exports = {
 
         'subtitle': "#a6b1b9",
         'subtitle2': "#949BA0",
+        'border': "#a6b1b952",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

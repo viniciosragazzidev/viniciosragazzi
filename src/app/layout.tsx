@@ -1,3 +1,4 @@
+import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { MenuBar } from "./components/menubar";
 import { AppProvider } from "./context/AppContext";
@@ -20,11 +21,12 @@ export default function RootLayout({
   // className={`${openModal ? "overflow-y-hidden" : ""}`}
   return (
     <AppProvider>
-      <html  lang="pt-br">
+      <html lang="pt-br">
         <body className={`${inter.className}  magicpattern `}>
           <Header />
           <MenuBar />
           {children}
+          <Footer />
         </body>
       </html>
     </AppProvider>
