@@ -8,6 +8,12 @@ import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
+export const metadata = {
+  title: "Vinicios Ragazzi - Front End Developer",
+  description:
+    "Front End developer portfólio website made with NextJS, TypeScript, TawilwindCSS, etc",
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -83,27 +89,27 @@ export default function RootLayout({
     {
       id:9,
       nome: "FrontEnd Mentor Notas",
-      img:"<EUGPSCoordinates>image.png", 
-       deploy:"<URL>",
-       code:"<URL>",
-     },
-     {
-       id:10,
-       nome:"Valorant Page (feito no inicio de aprendizado)",
-       img:"<EUGPSCoordinates>image.png", 
-       deploy:"<URL>",
-       code:"<URL>",
-     },
-   ];
-   return (
-     <AppContext.Provider value={{ setOpenModal, openModal,projects }}>
-       <html className={`${openModal ? 'overflow-y-hidden' : ''}`} lang="pt-br" >
-         <body className={`${inter.className}  magicpattern `}>
-           <Header />
-           <MenuBar />
-           {children}
-         </body>
-       </html>
-     </AppContext.Provider>
-   );
- }
+      img: "https://cdn.discordapp.com/attachments/524765307081064452/1116210020808392704/image.png",
+      deploy: "https://frontend-mentor-notas.vercel.app/",
+      code: "https://github.com/viniciosragazzi/frontend-mentor-notas",
+    },
+    {
+      id:10,
+      nome: "Valorant Page (feito no inicio de aprendizado)",
+      img: "https://cdn.discordapp.com/attachments/524765307081064452/1116211342534246480/image.png",
+      deploy: "https://valorant-page-ui.vercel.app/",
+      code: "https://github.com/viniciosragazzi/ValorantPageUi",
+    },
+  ];
+  return (
+    <AppContext.Provider value={{ setOpenModal, openModal,projects }}>
+      <html className={`${openModal ? 'overflow-y-hidden' : ''}`} lang="pt-br" >
+        <body className={`${inter.className}  magicpattern `}>
+          <Header />
+          <MenuBar />
+          {children}
+        </body>
+      </html>
+    </AppContext.Provider>
+  );
+}
