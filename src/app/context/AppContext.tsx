@@ -88,6 +88,27 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
     },
     {
       id: 3,
+      nome: "NapedApp",
+      img: "https://user-images.githubusercontent.com/125518719/245610939-7f31832e-d1af-4682-8ad8-921f212588fc.png",
+      imgList: [
+        {
+          img: "https://user-images.githubusercontent.com/125518719/245610939-7f31832e-d1af-4682-8ad8-921f212588fc.png",
+        },
+        {
+          img: "https://user-images.githubusercontent.com/125518719/245611134-3c5c2062-d108-4479-a314-341551d257da.png",
+        },
+        {
+          img: "https://user-images.githubusercontent.com/125518719/245611291-ab091857-bf8f-48ad-8c7e-8541e9b5e3aa.png",
+        },
+        {
+          img: "https://user-images.githubusercontent.com/125518719/245611565-a85ad38c-e6df-4d08-b342-0081282f31ed.png",
+        },
+      ],
+      deploy: "https://valorant-page-ui.vercel.app/",
+      code: "https://github.com/viniciosragazzi/ValorantPageUi",
+    },
+    {
+      id: 4,
       nome: "Woop Blog",
       img: "https://user-images.githubusercontent.com/73366668/244794278-adaf088f-5621-4ebf-92b5-93f72309da82.png",
       imgList: [
@@ -105,7 +126,7 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
       code: "https://github.com/viniciosragazzi/woppblog",
     },
     {
-      id: 4,
+      id: 5,
       nome: "Tip Count",
       img: "https://cdn.discordapp.com/attachments/524765307081064452/1116173451699429376/image.png",
       imgList: [
@@ -123,7 +144,7 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
       code: "https://github.com/viniciosragazzi/TipCalculatorUi",
     },
     {
-      id: 5,
+      id: 6,
       nome: "crowdfunding product",
       img: "https://cdn.discordapp.com/attachments/524765307081064452/1116209309160841397/image.png",
       imgList: [
@@ -135,9 +156,8 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
       deploy: "https://crowdfunding-product-page-main-peach.vercel.app/",
       code: "https://github.com/viniciosragazzi/crowdfunding-product-page-main",
     },
-
     {
-      id: 6,
+      id: 7,
       nome: "Todo App",
       img: "https://cdn.discordapp.com/attachments/524765307081064452/1116170985599684678/image.png",
       imgList: [
@@ -150,7 +170,7 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
       code: "https://github.com/viniciosragazzidev/todoapp",
     },
     {
-      id: 7,
+      id: 8,
       nome: "Codelandia Oriental",
       img: "https://cdn.discordapp.com/attachments/524765307081064452/1116207549910368276/image.png",
       imgList: [
@@ -163,7 +183,7 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
       code: "https://github.com/viniciosragazzi/codelandia_05_oriental",
     },
     {
-      id: 8,
+      id: 9,
       nome: "Codelandia FoodJP",
       img: "https://cdn.discordapp.com/attachments/524765307081064452/1116208512926748742/image.png",
       imgList: [
@@ -176,7 +196,7 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
       code: "https://github.com/viniciosragazzi/Codelandia-Desafio---26",
     },
     {
-      id: 9,
+      id: 10,
       nome: "FrontEnd Mentor Notas",
       img: "https://cdn.discordapp.com/attachments/524765307081064452/1116210020808392704/image.png",
       imgList: [
@@ -189,7 +209,7 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
       code: "https://github.com/viniciosragazzi/frontend-mentor-notas",
     },
     {
-      id: 10,
+      id: 11,
       nome: "Valorant Page (feito no inicio de aprendizado)",
       img: "https://cdn.discordapp.com/attachments/524765307081064452/1116211342534246480/image.png",
       imgList: [
@@ -201,6 +221,28 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
       deploy: "https://valorant-page-ui.vercel.app/",
       code: "https://github.com/viniciosragazzi/ValorantPageUi",
     },
+    {
+      id: 12,
+      nome: "NapedApp",
+      img: "https://user-images.githubusercontent.com/125518719/245610939-7f31832e-d1af-4682-8ad8-921f212588fc.png",
+      imgList: [
+        {
+          img: "https://user-images.githubusercontent.com/125518719/245610939-7f31832e-d1af-4682-8ad8-921f212588fc.png",
+        },
+        {
+          img: "https://user-images.githubusercontent.com/125518719/245611134-3c5c2062-d108-4479-a314-341551d257da.png",
+        },
+        {
+          img: "https://user-images.githubusercontent.com/125518719/245611291-ab091857-bf8f-48ad-8c7e-8541e9b5e3aa.png",
+        },
+        {
+          img: "https://user-images.githubusercontent.com/125518719/245611565-a85ad38c-e6df-4d08-b342-0081282f31ed.png",
+        },
+      ],
+      deploy: "https://valorant-page-ui.vercel.app/",
+      code: "https://github.com/viniciosragazzi/ValorantPageUi",
+    },
+
   ];
   return (
     <AppContext.Provider value={{ setOpenModal, openModal, projects }}>

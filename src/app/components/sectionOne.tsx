@@ -42,19 +42,19 @@ export const SectionOne = () => {
           </span>
           <div className="socials flex items-center gap-4">
             <a
-              href="#"
+              href="https://www.instagram.com/viniciosragazzi_/" target="_blank"
               className="rede text-primary bg-white text-xl w-8 h-8  flex justify-center items-center rounded-full cursor-pointer hover:scale-95 transition-all"
             >
               <InstagramLogo weight="fill" />
             </a>
             <a
-              href="#"
+              href="https://github.com/viniciosragazzidev" target="_blank"
               className="rede text-primary bg-white text-xl w-8 h-8  flex justify-center items-center rounded-full cursor-pointer hover:scale-95 transition-all"
             >
               <GithubLogo weight="fill" />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/viniciosragazzi/" target="_blank"
               className="rede text-primary bg-white text-xl w-8 h-8  flex justify-center items-center rounded-full cursor-pointer hover:scale-95 transition-all"
             >
               <LinkedinLogo weight="fill" />
