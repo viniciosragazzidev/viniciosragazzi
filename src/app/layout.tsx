@@ -4,8 +4,8 @@ import "./globals.css";
 import { ThemeProvider } from "@/lib/providers/NextThemesProvider";
 import Sidebar from "@/components/Sidebar";
 import AppProvider from "@/lib/providers/AppProvider";
-import UserBtn from "@/components/UserBtn";
-import LoginArea from "@/components/LoginArea";
+import LoginBtn from "@/components/LoginArea/LoginBtn";
+import LoginArea from "@/components/LoginArea/LoginArea";
 
 const inter = Inter({ subsets: ["latin"] });
 
